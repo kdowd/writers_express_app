@@ -1,0 +1,52 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	flex-basis: 100%;
+	color: snow;
+	border: 1px solid rgba(163, 67, 67, 0.25);
+	padding: 20px;
+	margin: 2%;
+	background-color: rgb(0, 0, 0, 0.75);
+	> header {
+		background-color: #282c34;
+
+		h2 {
+			color: snow;
+			font-weight: 100;
+			font-size: 2rem;
+			text-align: left;
+			padding: 1rem 2rem;
+			min-height: 80px;
+			// margin: 0;
+		}
+	}
+
+	> img {
+		max-width: 100%;
+		object-fit: cover;
+		object-position: center;
+		aspect-ratio: 16 / 9;
+	}
+
+	> img.no-image-avail {
+		object-fit: contain;
+	}
+
+	dialog {
+		border-radius: 4px;
+		box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.25);
+		padding: 1.6rem;
+		top: 50%;
+		transform: translate(0, -50%);
+
+		> button {
+			margin: 12px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		flex-basis: 40%;
+	}
+}

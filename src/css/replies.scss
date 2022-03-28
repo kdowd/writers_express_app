@@ -1,0 +1,41 @@
+.reply-wrapper {
+	background-color: rgb(102, 102, 102, 0.25);
+	border: 1px solid rgb(102, 102, 102, 0.5);
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	.reply {
+		border: 1px solid black;
+		padding: 1rem 0;
+		text-align: left;
+		padding: 1rem;
+		overflow-wrap: anywhere;
+		background-color: snow;
+	}
+	.reply-options {
+		display: flex;
+		gap: 0.5rem;
+	}
+
+	dialog[open] {
+		animation: modalAnimateIn 0.25s cubic-bezier(0, 1.8, 1, 1.8);
+	}
+
+	dialog::backdrop {
+		background: linear-gradient(90deg, rgba(198, 212, 209, 0.5), rgba(22, 22, 21, 0.5));
+	}
+}
+
+@keyframes modalAnimateIn {
+	from {
+		transform: translateX(-3rem);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+//https://alligator.io/html/dialog-element/

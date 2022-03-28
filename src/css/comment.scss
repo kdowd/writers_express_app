@@ -1,0 +1,89 @@
+.all-comments {
+  background-color: snow;
+
+  width: 50ch;
+
+  button {
+    width: 100%;
+  }
+}
+
+.comment-alt {
+  padding-top: 3rem;
+  border-radius: 6px;
+  background-position: 16px 16px;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 15px 0 rgb(50 50 50 / 75%);
+  background-image: url(https://exerror.com/wp-content/uploads/icons/download.png);
+}
+
+// @supports not (gap: 1em) {
+
+// }
+
+.comment {
+  position: relative;
+  padding: 1.5rem 1rem;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  > p {
+    background-color: azure;
+    margin: unset;
+    padding: 1rem 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    span {
+      font-size: 0.66rem;
+    }
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 10%;
+    // border: 1px dashed black;
+  }
+}
+
+.animate-heart {
+  animation: animateHeart;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.comment:not(:last-of-type) {
+  // border-bottom: 1px solid black;
+}
+
+@keyframes animateHeart {
+  // scale down and scale up faster in irregular intervals to get the throbbing effect
+  0% {
+    transform: scale(0.8);
+  }
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.4);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.8);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}

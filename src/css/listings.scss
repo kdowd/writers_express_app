@@ -1,0 +1,38 @@
+.listings-flex-wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: min(100%, 960px);
+	margin: auto;
+	gap: 20px;
+}
+
+.listing-detail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.75rem;
+	margin: 1rem auto;
+	background-color: cadetblue;
+	width: fit-content;
+	padding: 2rem;
+
+	.writer-image {
+		max-width: 470px;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	table {
+		background-color: black;
+	}
+
+	.name {
+		color: snow;
+	}
+
+	.button-orange {
+		width: 100%;
+	}
+}

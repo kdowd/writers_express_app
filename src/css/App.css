@@ -1,0 +1,55 @@
+.App {
+	text-align: center;
+	font-family: 'Fredoka', sans-serif;
+	font-weight: 400;
+	background-color: aliceblue;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-repeat: repeat;
+	background-size: contain;
+	background-position-y: top;
+	background-blend-mode: luminosity;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.home-welcome {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+	color: currentColor;
+	text-decoration: none;
+	font-size: medium;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	background-color: #36454f;
+	color: snow;
+	padding: 1rem;
+}
+.main-menu > li {
+	padding: 1rem 1.3rem;
+}
